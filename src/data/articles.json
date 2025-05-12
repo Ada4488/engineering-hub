@@ -8,7 +8,7 @@
     "contentSnippet": "This post demonstrates how to build a Business Event Monitoring System (BEMS) on AWS that handles over 86 million daily events with near real-time visibility, cross-Region controls, and automated alerts for stuck events. You might deploy this system for business-level insights into how events are flowing through your organization or to visualize the flow of transactions in real time. Downstream services also will have the option to process and respond to events originating within the system or not.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "Behind the Scenes: Building a Robust Ads Event Processing Pipeline",
@@ -17,7 +17,7 @@
     "isoDate": "2025-05-09T19:44:04.000Z",
     "blog": "Netflix TechBlog",
     "blogUrl": "https://netflixtechblog.com/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "First-party tags in seconds: Cloudflare integrates Google tag gateway for advertisers ",
@@ -28,7 +28,7 @@
     "contentSnippet": "Cloudflare introduces a one-click integration with Google tag gateway for advertisers.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "Dev"
   },
   {
     "title": "Accelerating GPU indexes in Faiss with NVIDIA cuVS",
@@ -39,7 +39,7 @@
     "contentSnippet": "Meta and NVIDIA collaborated to accelerate vector search on GPUs by integrating NVIDIA cuVS into Faiss v1.10, Meta’s open source library for similarity search. This new implementation of cuVS will be more performant than classic GPU-accelerated search in some areas. For inverted file (IVF) indexing, NVIDIA cuVS outperforms classical GPU-accelerated IVF build times by up [...]\nRead More...\nThe post Accelerating GPU indexes in Faiss with NVIDIA cuVS appeared first on Engineering at Meta.",
     "blog": "Engineering at Meta",
     "blogUrl": "https://engineering.fb.com/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "Measuring Dialogue Intelligibility for Netflix Content",
@@ -48,7 +48,7 @@
     "isoDate": "2025-05-08T00:40:17.000Z",
     "blog": "Netflix TechBlog",
     "blogUrl": "https://netflixtechblog.com/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "QUIC restarts, slow problems: udpgrm to the rescue",
@@ -59,7 +59,7 @@
     "contentSnippet": "udpgrm is a lightweight daemon for graceful restarts of UDP servers. It leverages SO_REUSEPORT and eBPF to route new and existing flows to the correct server instance.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Enhancing the Python ecosystem with type checking and free threading",
@@ -70,7 +70,7 @@
     "contentSnippet": "Meta and Quansight have improved key libraries in the Python Ecosystem. There is plenty more to do and we invite the community to help with our efforts.  We’ll look at two key efforts in Python’s packaging ecosystem to make packages faster and easier to use: 🚀 Unlock performance wins for developers through free-threaded Python – [...]\nRead More...\nThe post Enhancing the Python ecosystem with type checking and free threading appeared first on Engineering at Meta.",
     "blog": "Engineering at Meta",
     "blogUrl": "https://engineering.fb.com/",
-    "category": "Uncategorized"
+    "category": "Dev"
   },
   {
     "title": "Scaling with safety: Cloudflare's approach to global service health metrics and software releases",
@@ -81,7 +81,7 @@
     "contentSnippet": "Learn how Cloudflare tackles the challenge of scaling global service health metrics to safely release new software across our global network.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Taking the plunge: The engineering journey of building a subsea cable",
@@ -92,7 +92,7 @@
     "contentSnippet": "Meta develops infrastructure all across the globe to transport information and content for the billions of people using our services around the world. At the core of this infrastructure are aggregation points – like data centers – and the digital cables that connect them. Subsea cables – the unseen digital highways of the internet – [...]\nRead More...\nThe post Taking the plunge: The engineering journey of building a subsea cable appeared first on Engineering at Meta.",
     "blog": "Engineering at Meta",
     "blogUrl": "https://engineering.fb.com/",
-    "category": "Uncategorized"
+    "category": "DevOps"
   },
   {
     "title": "Thirteen new MCP servers from Cloudflare you can use today",
@@ -103,7 +103,7 @@
     "contentSnippet": "You can now connect to Cloudflare's first publicly available remote Model Context Protocol (MCP) servers from any MCP client that supports remote servers.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "MCP Demo Day: How 10 leading AI companies built MCP servers on Cloudflare",
@@ -114,7 +114,7 @@
     "contentSnippet": "We’re teaming up with Anthropic, Asana, Atlassian, Block, Intercom, Linear, PayPal, Sentry, Stripe, and Webflow to launch new remote MCP servers, built on Cloudflare, to enable Claude users to manage",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "Bringing streamable HTTP transport and Python language support to MCP servers",
@@ -125,7 +125,7 @@
     "contentSnippet": "We're continuing to make it easier for developers to bring their services into the AI ecosystem with the Model Context Protocol (MCP) with two new updates.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "Introducing AutoPatchBench: A Benchmark for AI-Powered Security Fixes",
@@ -136,7 +136,7 @@
     "contentSnippet": "We are introducing AutoPatchBench, a benchmark for the automated repair of vulnerabilities identified through fuzzing. By providing a standardized benchmark, AutoPatchBench enables researchers and practitioners to objectively evaluate and compare the effectiveness of various AI program repair systems.  This initiative facilitates the development of more robust security solutions, and also encourages collaboration within the community [...]\nRead More...\nThe post Introducing AutoPatchBench: A Benchmark for AI-Powered Security Fixes appeared first on Engineering at Meta.",
     "blog": "Engineering at Meta",
     "blogUrl": "https://engineering.fb.com/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "Building Private Processing for AI tools on WhatsApp",
@@ -147,7 +147,7 @@
     "contentSnippet": "We are inspired by the possibilities of AI to help people be more creative, productive, and stay closely connected on WhatsApp, so we set out to build a new technology that allows our users around the world to use AI in a privacy-preserving way. We’re sharing an early look into Private Processing, an optional capability [...]\nRead More...\nThe post Building Private Processing for AI tools on WhatsApp appeared first on Engineering at Meta.",
     "blog": "Engineering at Meta",
     "blogUrl": "https://engineering.fb.com/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "How the April 28, 2025, power outage in Portugal and Spain impacted Internet traffic and connectivity",
@@ -158,7 +158,7 @@
     "contentSnippet": "A massive power outage struck significant portions of Portugal and Spain at 10:34 UTC on April 28, disrupting everyday activities and services.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "How Meta understands data at scale",
@@ -169,7 +169,7 @@
     "contentSnippet": "Managing and understanding large-scale data ecosystems is a significant challenge for many organizations, requiring innovative solutions to efficiently safeguard user data. Meta’s vast and diverse systems make it particularly challenging to comprehend its structure, meaning, and context at scale. To address these challenges, we made substantial investments in advanced data understanding technologies, as part of [...]\nRead More...\nThe post How Meta understands data at scale appeared first on Engineering at Meta.",
     "blog": "Engineering at Meta",
     "blogUrl": "https://engineering.fb.com/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Targeted by 20.5 million DDoS attacks, up 358% year-over-year: Cloudflare’s 2025 Q1 DDoS Threat Report",
@@ -180,7 +180,7 @@
     "contentSnippet": "DDoS attacks are surging. In 2025 Q1, Cloudflare blocked +20M attacks (a 358% YoY spike) along with 5.6 Tbps and 4.8 Bpps record-breaking attacks.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "Security"
   },
   {
     "title": "New year, no shutdowns: the Q1 2025 Internet disruption summary",
@@ -191,7 +191,7 @@
     "contentSnippet": "In Q1 2025, we observed Internet disruptions around the world caused by cable damage, power outages, natural disasters, fire, a cyberattack, and technical problems.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "Security"
   },
   {
     "title": "Empower your teams with modern architecture governance",
@@ -202,7 +202,7 @@
     "contentSnippet": "Modern cloud architectures demand a new governance approach. In this post, we show how collaborative architecture oversight can transform team performance through automation, self-service platforms, and distributed decision-making.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "Dev"
   },
   {
     "title": "How Smartsheet reduced latency and optimized costs in their serverless architecture",
@@ -213,7 +213,7 @@
     "contentSnippet": "In this post, we discuss Smartsheet’s journey optimizing its serverless architecture. We explore the solution, the stringent requirements Smartsheet faced, and how they’ve achieved an over 80% latency reduction. This technical journey offers valuable insights for organizations looking to enhance their serverless architectures with proven enterprise-grade optimization techniques.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Announcing the AWS Well-Architected Generative AI Lens",
@@ -224,7 +224,7 @@
     "contentSnippet": "We are delighted to introduce the new AWS Well-Architected Generative AI Lens. Use the lens to make sure that your generative AI workloads are architected with operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability in mind.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "Why I joined Cloudflare: to build world-class partnerships in EMEA ",
@@ -235,7 +235,7 @@
     "contentSnippet": "The EMEA region is a patchwork of diverse markets, industries, and regulatory environments, and it demands a partner-centric approach. That’s why I joined Cloudflare as VP of EMEA Partnerships.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Why I joined Cloudflare as Chief People Officer — Kelly Russell",
@@ -246,7 +246,7 @@
     "contentSnippet": "After years navigating the world of high-growth tech, I’ve learned to recognize a special opportunity when I see one. That’s exactly why I’m thrilled to join Cloudflare as Chief People Officer.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Build and operate an effective architecture review board",
@@ -257,7 +257,7 @@
     "contentSnippet": "In this post, we identify the components of an efficient architecture review process, define what an ARB is, and describe how to build and operate an effective enterprise ARB.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Developer Week 2025 wrap-up",
@@ -268,7 +268,7 @@
     "contentSnippet": "We’ve closed out Developer Week 2025. Here’s a quick recap of the announcements and in-depth technical explorations that went out during the week.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "Dev"
   },
   {
     "title": "Optimizing Our E2E Pipeline",
@@ -279,7 +279,7 @@
     "contentSnippet": "In the world of DevOps and Developer Experience (DevXP), speed and efficiency can make a big difference on an engineer’s day-to-day tasks. Today, we’ll dive into how Slack’s DevXP team took some existing tools and used them to optimize an end-to-end (E2E) testing pipeline. This lowered build times and reduced redundant processes, saving both time…\nThe post Optimizing Our E2E Pipeline appeared first on Engineering at Slack.",
     "blog": "Slack Engineering",
     "blogUrl": "https://slack.engineering/",
-    "category": "Uncategorized"
+    "category": "DevOps"
   },
   {
     "title": "Simple, scalable, and global: Containers are coming to Cloudflare Workers in June 2025",
@@ -290,7 +290,7 @@
     "contentSnippet": "Cloudflare Containers are coming this June. Run new types of workloads on our network with an experience that is simple, scalable, global and deeply integrated with Workers.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "Startup spotlight: building AI agents and accelerating innovation with Cohort #5",
@@ -301,7 +301,7 @@
     "contentSnippet": "Discover how developers are using Cloudflare to scale AI workloads and streamline automation and how participants in Workers Launchpad Cohort #4 have built, and startups participating in Cohort #5",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "A global virtual private cloud for building secure cross-cloud apps on Cloudflare Workers",
@@ -312,7 +312,7 @@
     "contentSnippet": "We’re announcing Workers VPC: a global private network that allows applications deployed on Cloudflare Workers to connect to your legacy cloud infrastructure.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "DevOps"
   },
   {
     "title": "Startup Program update: empowering every stage of the startup journey",
@@ -323,7 +323,7 @@
     "contentSnippet": "Cloudflare’s Startup Program offers up to $250,000 in credits for companies building on our Developer Platform across 4 tiers: $5,000, $25,000, $100,000, and $250,000.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "Dev"
   },
   {
     "title": "How we simplified NCMEC reporting with Cloudflare Workflows",
@@ -334,7 +334,7 @@
     "contentSnippet": "We transitioned to Cloudflare Workflows to manage complex, multi-step processes more efficiently. This shift replaced our National Center for Missing & Exploited Children (NCMEC) reporting system.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "Security"
   },
   {
     "title": "A next-generation Certificate Transparency log built on Cloudflare Workers",
@@ -345,7 +345,7 @@
     "contentSnippet": "Learn about recent developments in Certificate Transparency (CT), and how we built a next-generation CT log on top of Cloudflare's Developer Platform.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "Dev"
   },
   {
     "title": "Workers AI gets a speed boost, batch workload support, more LoRAs, new models, and a refreshed dashboard",
@@ -356,7 +356,7 @@
     "contentSnippet": "We just made Workers AI inference faster with speculative decoding & prefix caching. Use our new batch inference for handling large request volumes seamlessly.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "Making Super Slurper 5x faster with Workers, Durable Objects, and Queues",
@@ -367,7 +367,7 @@
     "contentSnippet": "We re-architected Super Slurper from the ground up using our Developer Platform — leveraging Cloudflare Workers, Durable Objects, and Queues — and improved transfer speeds by up to 5x.",
     "blog": "Cloudflare Blog",
     "blogUrl": "https://blog.cloudflare.com/",
-    "category": "Uncategorized"
+    "category": "Dev"
   },
   {
     "title": "How Netflix Accurately Attributes eBPF Flow Logs",
@@ -376,7 +376,7 @@
     "isoDate": "2025-04-08T17:50:58.000Z",
     "blog": "Netflix TechBlog",
     "blogUrl": "https://netflixtechblog.com/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "How UNiDAYS achieved AWS Region expansion in 3 weeks",
@@ -387,7 +387,7 @@
     "contentSnippet": "In this post, we share how UNiDAYS achieved AWS Region expansion in just 3 weeks using AWS services.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Announcing the Well-Architected Data Residency with Hybrid Cloud Services Lens",
@@ -398,7 +398,7 @@
     "contentSnippet": "The new Well-Architected Data Residency with Hybrid Cloud Services Lens is available now. Use the lens whitepaper to adopt your hybrid cloud workloads according to the tenants of the Well-Architected Framework while maintaining data sovereignty requirements.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "Meta Open Source: 2024 by the numbers",
@@ -409,7 +409,7 @@
     "contentSnippet": "Open source has played an essential role in the tech industry and beyond. Whether in the AI/ML, web, or mobile space, our open source community grew and evolved while connecting people worldwide.  At Meta Open Source, 2024 was a year of growth and transformation. Our open source initiatives addressed the evolving needs and challenges of [...]\nRead More...\nThe post Meta Open Source: 2024 by the numbers appeared first on Engineering at Meta.",
     "blog": "Engineering at Meta",
     "blogUrl": "https://engineering.fb.com/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "Globalizing Productions with Netflix’s Media Production Suite",
@@ -418,7 +418,7 @@
     "isoDate": "2025-03-31T16:21:48.000Z",
     "blog": "Netflix TechBlog",
     "blogUrl": "https://netflixtechblog.com/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Mobile GraphQL at Meta in 2025",
@@ -429,7 +429,7 @@
     "contentSnippet": "Mobile GraphQL is a framework used at Meta for fetching data in mobile applications using GraphQL, a strongly-typed, declarative query language. At Meta it handles data fetching for apps like Facebook and Instagram. Sabrina, a software engineer on Meta’s Mobile GraphQL Platform Team, joins Pascal Hartig on the Meta Tech podcast to discuss the evolution [...]\nRead More...\nThe post Mobile GraphQL at Meta in 2025 appeared first on Engineering at Meta.",
     "blog": "Engineering at Meta",
     "blogUrl": "https://engineering.fb.com/",
-    "category": "Uncategorized"
+    "category": "Dev"
   },
   {
     "title": "Foundation Model for Personalized Recommendation",
@@ -438,7 +438,7 @@
     "isoDate": "2025-03-29T00:51:25.000Z",
     "blog": "Netflix TechBlog",
     "blogUrl": "https://netflixtechblog.com/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "From virtual machine to Kubernetes to serverless: How dacadoo saved 78% on cloud costs and automated operations",
@@ -449,7 +449,7 @@
     "contentSnippet": "In this post, we walk you step-by-step through dacadoo's journey of embracing managed services, highlighting their architectural decisions as we go.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "DevOps"
   },
   {
     "title": "HDR10+ Now Streaming on Netflix",
@@ -458,7 +458,7 @@
     "isoDate": "2025-03-24T18:39:15.000Z",
     "blog": "Netflix TechBlog",
     "blogUrl": "https://netflixtechblog.com/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Master architecture decision records (ADRs): Best practices for effective decision-making",
@@ -469,7 +469,7 @@
     "contentSnippet": "In this post, you'll learn how to implement Architecture Decision Records (ADRs) in your organization, based on best practices developed from experience with over 200 ADRs across multiple projects. You'll also discover practical tips for streamlining architectural decision-making, see real-world examples from projects with teams ranging from 10 to over 100 members, and understand the common challenges in architecture decision-making and how ADRs can help address them.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "Dev"
   },
   {
     "title": "Pilot light with reserved capacity: How to optimize DR cost using On-Demand Capacity Reservations",
@@ -480,7 +480,7 @@
     "contentSnippet": "In this post, we explore an intermediate strategy between the pilot light and the warm standby strategies: pilot light with reserved capacity. You can use this strategy to reserve compute capacity in a secondary Region while also limiting cost.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Build an enterprise API management solution using Amazon API Gateway",
@@ -491,7 +491,7 @@
     "contentSnippet": "This blog post shows how you can use Amazon API Gateway—along with AWS Lambda, Amazon DynamoDB, and other AWS services—to create a comprehensive and customizable APIM solution. This solution addresses the complex requirements of large enterprises managing APIs at scale.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "Dev"
   },
   {
     "title": "Training a call center fraud detection model for IVR calls with Amazon SageMaker Canvas",
@@ -502,7 +502,7 @@
     "contentSnippet": "This blog post will show you how to use the power of ML to build a fraud-detection model using Amazon SageMaker Canvas, a no-code/low-code ML service that business analysts and domain experts can use to build, train, and deploy ML models without requiring extensive ML expertise.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "How we built enterprise search to be secure and private",
@@ -513,7 +513,7 @@
     "contentSnippet": "Many don’t know that “Slack” is in fact a backronym—it stands for “Searchable Log of all Communication and Knowledge”. And these days, it’s not just a searchable log: with Slack AI, Slack is now an intelligent log, leveraging the latest in generative AI to securely surface powerful, time-saving insights. We built Slack AI from the…\nThe post How we built enterprise search to be secure and private appeared first on Engineering at Slack.",
     "blog": "Slack Engineering",
     "blogUrl": "https://slack.engineering/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "Title Launch Observability at Netflix Scale",
@@ -522,7 +522,7 @@
     "isoDate": "2025-03-05T01:24:53.000Z",
     "blog": "Netflix TechBlog",
     "blogUrl": "https://netflixtechblog.com/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Building multimodal AI for Ray-Ban Meta glasses",
@@ -533,7 +533,7 @@
     "contentSnippet": "Multimodal AI – models capable of processing multiple different types of inputs like speech, text, and images – have been transforming user experiences in the wearables space. With our Ray-Ban Meta glasses, multimodal AI helps the glasses see what the wearer is seeing. This means anyone wearing Ray-Ban Meta glasses can ask them questions about [...]\nRead More...\nThe post Building multimodal AI for Ray-Ban Meta glasses appeared first on Engineering at Meta.",
     "blog": "Engineering at Meta",
     "blogUrl": "https://engineering.fb.com/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "WellRight modernizes to an event-driven architecture to manage bursty and unpredictable traffic",
@@ -544,7 +544,7 @@
     "contentSnippet": "In this post, we share how WellRight optimized the cost and performance of their application through a ground-up modernization to an event-driven architecture.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Realizing twelve-factors with the AWS Well-Architected Framework",
@@ -555,7 +555,7 @@
     "contentSnippet": "Organizations that are interested in improving their development velocity that follow the principles of the twelve-factor app might find benefits in understanding how to realize those concepts on Amazon Web Services (AWS). In this post, I will help you correlate the twelve-factors app concepts as you architect solutions on AWS.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "Dev"
   },
   {
     "title": "Introducing Impressions at Netflix",
@@ -564,7 +564,7 @@
     "isoDate": "2025-02-15T01:13:20.000Z",
     "blog": "Netflix TechBlog",
     "blogUrl": "https://netflixtechblog.com/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Create a serverless custom retry mechanism for stateless queue consumers",
@@ -575,7 +575,7 @@
     "contentSnippet": "In this post, we propose a solution that handles serverless retries when the workflow’s state isn’t managed by an additional service.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Use generative AI on AWS for efficient clinical document analysis",
@@ -586,7 +586,7 @@
     "contentSnippet": "In this post, we show how Clario uses the AWS platform to accelerate clinical document analysis.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "How Nielsen uses serverless concepts on Amazon EKS for big data processing with Spark workloads",
@@ -597,7 +597,7 @@
     "contentSnippet": "In this post, we follow Nielsen’s journey to build a robust and scalable architecture while enjoying linear scaling. We start by examining the initial challenges Nielsen faced and the root causes behind these issues. Then, we explore Nielsen’s solution: running Spark on Amazon Elastic Kubernetes Service (Amazon EKS) while adopting serverless concepts.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "DevOps"
   },
   {
     "title": "Top Architecture Blog Posts of 2024",
@@ -608,7 +608,7 @@
     "contentSnippet": "Well, it’s been another historic year! We’ve watched in awe as the use of real-world generative AI has changed the tech landscape, and while we at the Architecture Blog happily participated, we also made every effort to stay true to our channel’s original scope, and your readership this last year has proven that decision was […]",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "Enhance the resilience of critical workloads by architecting with multiple AWS Regions",
@@ -619,7 +619,7 @@
     "contentSnippet": "In this post, we will share how you can use multi-Region as an architectural approach to achieve higher resilience on Amazon Web Services (AWS). This approach relies on first operating a workload across multiple Availability Zones within an AWS Region, before expanding to achieve even higher resilience by using multiple Regions.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "TVS Supply Chain Solutions built a file transfer platform using AWS Transfer Family for AS2 for B2B collaboration",
@@ -630,7 +630,7 @@
     "contentSnippet": "This post shows how cloud-based services can transform traditional B2B communication processes, offering supply chain companies a path to improved efficiency, compliance, and customer satisfaction. For supply chain providers facing similar challenges, this solution offers a blueprint for modernizing file transfer systems while maintaining compliance with industry standards.",
     "blog": "AWS Architecture Blog",
     "blogUrl": "https://aws.amazon.com/architecture/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "Automated Accessibility Testing at Slack",
@@ -641,7 +641,7 @@
     "contentSnippet": "At Slack, customer love is our first priority and accessibility is a core tenet of customer trust. We have our own Slack Accessibility Standards that product teams follow to guarantee their features are compliant with Web Content Accessibility Guidelines (WCAG). Our dedicated accessibility team supports developers in following these guidelines throughout the development process. We…\nThe post Automated Accessibility Testing at Slack appeared first on Engineering at Slack.",
     "blog": "Slack Engineering",
     "blogUrl": "https://slack.engineering/",
-    "category": "Uncategorized"
+    "category": "Dev"
   },
   {
     "title": "Title Launch Observability at Netflix Scale",
@@ -650,7 +650,7 @@
     "isoDate": "2025-01-07T01:25:58.000Z",
     "blog": "Netflix TechBlog",
     "blogUrl": "https://netflixtechblog.com/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Part 3: A Survey of Analytics Engineering Work at Netflix",
@@ -659,7 +659,7 @@
     "isoDate": "2025-01-06T19:27:38.000Z",
     "blog": "Netflix TechBlog",
     "blogUrl": "https://netflixtechblog.com/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Migration Automation: Easing the Jenkins → GHA shift with help from AI",
@@ -670,7 +670,7 @@
     "contentSnippet": "Overview The past few months have been exciting times for Slack’s CI infrastructure. After years of developer frustration with Jenkins (everything from security issues to downtime to generally poor UX) internal pressure led us to move a majority of Slack’s CI jobs from Jenkins to GitHub Actions.  My intern project at Slack this summer involved…\nThe post Migration Automation: Easing the Jenkins → GHA shift with help from AI appeared first on Engineering at Slack.",
     "blog": "Slack Engineering",
     "blogUrl": "https://slack.engineering/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "Break Stuff on Purpose",
@@ -681,7 +681,7 @@
     "contentSnippet": "“A complex system can fail in an infinite number of ways.” -“Systemantics” by John Gall   Incidents are stressful but inevitable. Even services designed for availability will eventually encounter a failure. Engineers naturally find it daunting to defend their systems against the “infinite number of ways” things can go wrong.  Our team found ourselves in…\nThe post Break Stuff on Purpose appeared first on Engineering at Slack.",
     "blog": "Slack Engineering",
     "blogUrl": "https://slack.engineering/",
-    "category": "Uncategorized"
+    "category": "AI"
   },
   {
     "title": "Slack Audit Logs and Anomalies",
@@ -692,7 +692,7 @@
     "contentSnippet": "What are Slack Audit Logs? Like many Software as a Service (SaaS) offerings, Slack provides audit logs to Enterprise Grid customers that record when entities take an action on the platform. For example, when a user logs in, when a user updates their profile, when an app downloads a file, etc. The actual list of…\nThe post Slack Audit Logs and Anomalies appeared first on Engineering at Slack.",
     "blog": "Slack Engineering",
     "blogUrl": "https://slack.engineering/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "Astra Dynamic Chunks: How We Saved by Redesigning a Key Part of Astra",
@@ -703,7 +703,7 @@
     "contentSnippet": "Introduction Slack handles a lot of log data. In fact, we consume over 6 million log messages per second. That equates to over 10 GB of data per second! And it’s all stored using Astra, our in-house, open-source log search engine. To make this data searchable, Astra groups it by time and splits the data…\nThe post Astra Dynamic Chunks: How We Saved by Redesigning a Key Part of Astra appeared first on Engineering at Slack.",
     "blog": "Slack Engineering",
     "blogUrl": "https://slack.engineering/",
-    "category": "Uncategorized"
+    "category": "Other"
   },
   {
     "title": "There’s No Such Thing as a Free Lunch!",
@@ -714,6 +714,6 @@
     "contentSnippet": "Incident Management takes time Incidents need responders that are trained and experienced.  At Slack, training is a foundation of our incident management program. Self-service training and live courses based mainly on prepared content are one piece of the puzzle, but there can be a missing piece in many organizations. How can staff get practical experience…\nThe post There’s No Such Thing as a Free Lunch! appeared first on Engineering at Slack.",
     "blog": "Slack Engineering",
     "blogUrl": "https://slack.engineering/",
-    "category": "Uncategorized"
+    "category": "AI"
   }
 ]

@@ -39,7 +39,7 @@ export default function Home() {
 
   // Group articles by category
   const articlesByCategory: ArticlesByCategory = articles.reduce((acc, article) => {
-    const cat = article.category || 'Uncategorized';
+    const cat = article.category || 'Other';
     if (!acc[cat]) acc[cat] = [];
     acc[cat].push(article);
     return acc;
@@ -53,16 +53,16 @@ export default function Home() {
     : articlesByCategory[selectedCategory] || [];
 
   return (
-    <main className="max-w-4xl mx-auto p-4">
+    <main>
       <RetroHeader />
-      <div className="window mt-8">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-4">
-          <h2 className="font-pressStart text-lg">Latest Engineering Articles</h2>
+      <div className="window">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 gap-4">
+          <h2 className="header-title text-xl m-0">Latest Engineering Articles</h2>
           <div className="flex items-center gap-2">
-            <label htmlFor="category" className="font-pressStart text-xs">Category:</label>
+            <label htmlFor="category" className="font-pressStart text-xs text-[#FFD700]">Category:</label>
             <select
               id="category"
-              className="font-pressStart text-xs border-2 border-black bg-[#e0e0e0] px-2 py-1 rounded shadow-inner outline-none focus:ring-2 focus:ring-blue-400"
+              className="font-pressStart text-xs"
               value={selectedCategory}
               onChange={e => setSelectedCategory(e.target.value)}
             >
@@ -75,38 +75,34 @@ export default function Home() {
         {loading && <p className="text-sm">Loading articles...</p>}
         {error && <p className="text-sm text-red-600">{error}</p>}
         {!loading && !error && (
-          <div>
+          <div className="article-grid">
             {filteredArticles.length === 0 && (
-              <p className="text-sm font-pressStart">No articles found for this category.</p>
+              <p className="text-sm font-pressStart col-span-full">No articles found for this category.</p>
             )}
-            <ul className="space-y-6">
-              {filteredArticles.map(article => (
-                <li key={article.link} className="window p-4 bg-[#f8f8f8] border-2 border-black shadow-md">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                    <a href={article.link} target="_blank" rel="noopener noreferrer" className="font-pressStart text-blue-700 hover:text-blue-900 underline text-base">
-                      {article.title}
-                    </a>
-                    <span className="ml-0 sm:ml-2 text-xs text-gray-500 font-pressStart">{article.blog}</span>
-                  </div>
-                  <div className="text-xs text-gray-700 mb-2 font-mono">
-                    {article.pubDate && (
-                      <span>Published: {new Date(article.pubDate).toLocaleDateString()}</span>
-                    )}
-                  </div>
-                  <div className="text-sm mt-1 mb-2 font-mono">
-                    {article.contentSnippet || article.content || <span className="italic text-gray-400">No summary available.</span>}
-                  </div>
-                  <a
-                    href={article.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="button font-pressStart text-xs mt-2 inline-block"
-                  >
-                    Read Full Article
-                  </a>
-                </li>
-              ))}
-            </ul>
+            {filteredArticles.map(article => (
+              <div key={article.link} className="article-card">
+                <a href={article.link} target="_blank" rel="noopener noreferrer" className="article-title block mb-2">
+                  {article.title}
+                </a>
+                <div className="article-summary">
+                  {article.contentSnippet || article.content || <span className="italic text-gray-400">No summary available.</span>}
+                </div>
+                <div className="article-blog mt-2">{article.blog}</div>
+                <div className="text-xs text-gray-500 mt-1">
+                  {article.pubDate && (
+                    <span>Published: {new Date(article.pubDate).toLocaleDateString()}</span>
+                  )}
+                </div>
+                <a
+                  href={article.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button font-pressStart text-xs mt-4 inline-block"
+                >
+                  Read Full Article
+                </a>
+              </div>
+            ))}
           </div>
         )}
       </div>
