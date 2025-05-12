@@ -11,9 +11,9 @@ body {
 
 .header-title {
   color: #FFD700;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-align: center;
-  margin: 2rem 0 1rem 0;
+  margin: 1rem 0 0.5rem 0;
   letter-spacing: 2px;
 }
 
@@ -22,15 +22,15 @@ body {
   border: 3px solid #FFD700;
   border-radius: 12px;
   box-shadow: 0 8px 32px #000a;
-  padding: 2rem;
-  margin: 2rem auto;
+  padding: 1rem;
+  margin: 1rem auto;
   max-width: 900px;
 }
 
 .article-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .article-card {
@@ -38,7 +38,7 @@ body {
   border: 2px solid #FFD700;
   border-radius: 8px;
   box-shadow: 0 4px 16px #0008;
-  padding: 1.5rem 1rem;
+  padding: 0.75rem 0.5rem;
   color: #fff;
   transition: transform 0.2s, border-color 0.2s;
 }
@@ -48,17 +48,18 @@ body {
 }
 .article-title {
   color: #FFD700;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 .article-summary {
   color: #ccc;
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
 }
 .article-blog {
   color: #FFD700;
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
 }
 select, .button {
   background: #111;
@@ -66,10 +67,11 @@ select, .button {
   border: 2px solid #FFD700;
   border-radius: 6px;
   font-family: 'Press Start 2P', 'Orbitron', Arial, sans-serif;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0.7rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   transition: border-color 0.2s, color 0.2s;
+  font-size: 0.95rem;
 }
 select:focus, .button:focus {
   outline: none;
