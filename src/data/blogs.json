@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Netflix TechBlog",
+    "url": "https://netflixtechblog.com/",
+    "rss": "https://netflixtechblog.com/feed"
+  },
+  {
+    "name": "Uber Blog",
+    "url": "https://www.uber.com/blog/engineering/",
+    "rss": "https://www.uber.com/blog/engineering/feed/"
+  },
+  {
+    "name": "Cloudflare Blog",
+    "url": "https://blog.cloudflare.com/",
+    "rss": "https://blog.cloudflare.com/rss/"
+  },
+  {
+    "name": "Engineering at Meta",
+    "url": "https://engineering.fb.com/",
+    "rss": "https://engineering.fb.com/feed/"
+  },
+  {
+    "name": "LinkedIn Engineering",
+    "url": "https://engineering.linkedin.com/blog",
+    "rss": "https://engineering.linkedin.com/blog.rss"
+  },
+  {
+    "name": "AWS Architecture Blog",
+    "url": "https://aws.amazon.com/architecture/",
+    "rss": "https://aws.amazon.com/blogs/architecture/feed/"
+  },
+  {
+    "name": "Stripe Blog: Engineering",
+    "url": "https://stripe.com/blog/engineering",
+    "rss": "https://stripe.com/blog/engineering/rss"
+  },
+  {
+    "name": "Discord Blog: Engineering & Developers",
+    "url": "https://discord.com/blog/category/engineering",
+    "rss": "https://discord.com/blog/category/engineering/rss"
+  },
+  {
+    "name": "Slack Engineering",
+    "url": "https://slack.engineering/",
+    "rss": "https://slack.engineering/feed/"
+  }
+] 
