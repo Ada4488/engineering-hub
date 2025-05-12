@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import RetroHeader from './components/RetroHeader';
+import BootScreen from './components/BootScreen';
 
 interface Article {
   title: string;
@@ -53,59 +54,61 @@ export default function Home() {
     : articlesByCategory[selectedCategory] || [];
 
   return (
-    <main>
-      <RetroHeader />
-      <div className="window">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 gap-4">
-          <h2 className="header-title text-xl m-0">Latest Engineering Articles</h2>
-          <div className="flex items-center gap-2">
-            <label htmlFor="category" className="font-pressStart text-xs text-[#FFD700]">Category:</label>
-            <select
-              id="category"
-              className="font-pressStart text-xs"
-              value={selectedCategory}
-              onChange={e => setSelectedCategory(e.target.value)}
-            >
-              {categories.map(cat => (
-                <option key={cat} value={cat}>{cat}</option>
+    <BootScreen>
+      <main>
+        <RetroHeader />
+        <div className="window">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 gap-4">
+            <h2 className="header-title text-xl m-0">Latest Engineering Articles</h2>
+            <div className="flex items-center gap-2">
+              <label htmlFor="category" className="font-pressStart text-xs text-[#FFD700]">Category:</label>
+              <select
+                id="category"
+                className="font-pressStart text-xs"
+                value={selectedCategory}
+                onChange={e => setSelectedCategory(e.target.value)}
+              >
+                {categories.map(cat => (
+                  <option key={cat} value={cat}>{cat}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+          {loading && <p className="text-sm">Loading articles...</p>}
+          {error && <p className="text-sm text-red-600">{error}</p>}
+          {!loading && !error && (
+            <div className="article-grid">
+              {filteredArticles.length === 0 && (
+                <p className="text-sm font-pressStart col-span-full">No articles found for this category.</p>
+              )}
+              {filteredArticles.map(article => (
+                <div key={article.link} className="article-card">
+                  <a href={article.link} target="_blank" rel="noopener noreferrer" className="article-title block mb-2">
+                    {article.title}
+                  </a>
+                  <div className="article-summary">
+                    {article.contentSnippet || article.content || <span className="italic text-gray-400">No summary available.</span>}
+                  </div>
+                  <div className="article-blog mt-2">{article.blog}</div>
+                  <div className="text-xs text-gray-500 mt-1">
+                    {article.pubDate && (
+                      <span>Published: {new Date(article.pubDate).toLocaleDateString()}</span>
+                    )}
+                  </div>
+                  <a
+                    href={article.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button font-pressStart text-xs mt-4 inline-block"
+                  >
+                    Read Full Article
+                  </a>
+                </div>
               ))}
-            </select>
-          </div>
+            </div>
+          )}
         </div>
-        {loading && <p className="text-sm">Loading articles...</p>}
-        {error && <p className="text-sm text-red-600">{error}</p>}
-        {!loading && !error && (
-          <div className="article-grid">
-            {filteredArticles.length === 0 && (
-              <p className="text-sm font-pressStart col-span-full">No articles found for this category.</p>
-            )}
-            {filteredArticles.map(article => (
-              <div key={article.link} className="article-card">
-                <a href={article.link} target="_blank" rel="noopener noreferrer" className="article-title block mb-2">
-                  {article.title}
-                </a>
-                <div className="article-summary">
-                  {article.contentSnippet || article.content || <span className="italic text-gray-400">No summary available.</span>}
-                </div>
-                <div className="article-blog mt-2">{article.blog}</div>
-                <div className="text-xs text-gray-500 mt-1">
-                  {article.pubDate && (
-                    <span>Published: {new Date(article.pubDate).toLocaleDateString()}</span>
-                  )}
-                </div>
-                <a
-                  href={article.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="button font-pressStart text-xs mt-4 inline-block"
-                >
-                  Read Full Article
-                </a>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-    </main>
+      </main>
+    </BootScreen>
   );
 }
