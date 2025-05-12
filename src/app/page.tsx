@@ -1,105 +1,114 @@
-import Image from "next/image";
+import { useEffect, useState } from "react";
 import RetroHeader from './components/RetroHeader';
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <RetroHeader />
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+interface Article {
+  title: string;
+  link: string;
+  pubDate?: string;
+  isoDate?: string;
+  content?: string;
+  contentSnippet?: string;
+  blog: string;
+  blogUrl: string;
+  category: string | null;
+}
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+interface ArticlesByCategory {
+  [category: string]: Article[];
+}
+
+export default function Home() {
+  const [articles, setArticles] = useState<Article[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string>('All');
+
+  useEffect(() => {
+    fetch('/api/fetch-articles')
+      .then(res => res.json())
+      .then(data => {
+        setArticles(data.articles || []);
+        setLoading(false);
+      })
+      .catch(() => {
+        setError('Failed to load articles.');
+        setLoading(false);
+      });
+  }, []);
+
+  // Group articles by category
+  const articlesByCategory: ArticlesByCategory = articles.reduce((acc, article) => {
+    const cat = article.category || 'Uncategorized';
+    if (!acc[cat]) acc[cat] = [];
+    acc[cat].push(article);
+    return acc;
+  }, {} as ArticlesByCategory);
+
+  const categories = ['All', ...Object.keys(articlesByCategory)];
+
+  // Filtered articles
+  const filteredArticles = selectedCategory === 'All'
+    ? articles
+    : articlesByCategory[selectedCategory] || [];
+
+  return (
+    <main className="max-w-4xl mx-auto p-4">
+      <RetroHeader />
+      <div className="window mt-8">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-4">
+          <h2 className="font-pressStart text-lg">Latest Engineering Articles</h2>
+          <div className="flex items-center gap-2">
+            <label htmlFor="category" className="font-pressStart text-xs">Category:</label>
+            <select
+              id="category"
+              className="font-pressStart text-xs border-2 border-black bg-[#e0e0e0] px-2 py-1 rounded shadow-inner outline-none focus:ring-2 focus:ring-blue-400"
+              value={selectedCategory}
+              onChange={e => setSelectedCategory(e.target.value)}
+            >
+              {categories.map(cat => (
+                <option key={cat} value={cat}>{cat}</option>
+              ))}
+            </select>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        {loading && <p className="text-sm">Loading articles...</p>}
+        {error && <p className="text-sm text-red-600">{error}</p>}
+        {!loading && !error && (
+          <div>
+            {filteredArticles.length === 0 && (
+              <p className="text-sm font-pressStart">No articles found for this category.</p>
+            )}
+            <ul className="space-y-6">
+              {filteredArticles.map(article => (
+                <li key={article.link} className="window p-4 bg-[#f8f8f8] border-2 border-black shadow-md">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                    <a href={article.link} target="_blank" rel="noopener noreferrer" className="font-pressStart text-blue-700 hover:text-blue-900 underline text-base">
+                      {article.title}
+                    </a>
+                    <span className="ml-0 sm:ml-2 text-xs text-gray-500 font-pressStart">{article.blog}</span>
+                  </div>
+                  <div className="text-xs text-gray-700 mb-2 font-mono">
+                    {article.pubDate && (
+                      <span>Published: {new Date(article.pubDate).toLocaleDateString()}</span>
+                    )}
+                  </div>
+                  <div className="text-sm mt-1 mb-2 font-mono">
+                    {article.contentSnippet || article.content || <span className="italic text-gray-400">No summary available.</span>}
+                  </div>
+                  <a
+                    href={article.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button font-pressStart text-xs mt-2 inline-block"
+                  >
+                    Read Full Article
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </main>
   );
 }
