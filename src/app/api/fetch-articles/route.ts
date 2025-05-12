@@ -47,7 +47,7 @@ export async function GET() {
             category: null, // to be filled
           });
         });
-      } catch (_e) {
+      } catch {
         // Ignore failed feeds
       }
     })
@@ -55,7 +55,7 @@ export async function GET() {
 
   // Categorize articles
   for (const article of articles) {
-    article.category = await categorizeArticle(article.title, article.contentSnippet || article.content || '');
+    article.category = await categorizeArticle();
   }
 
   // Sort by date
